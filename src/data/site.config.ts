@@ -10,7 +10,7 @@ interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-	site: 'https://blog-template-gray.vercel.app/', // Write here your website url
+	site: 'https://blog-wealthwise.netlify.app', // Write here your website url
 	author: 'WealthWise', // Site author
 	title: 'WealthWise Learning hub', // Site title.
 	description: 'Stay updated with the latest financial insights.', // Description to display in the meta tags
