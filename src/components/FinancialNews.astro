@@ -1,0 +1,46 @@
+---
+import { onMount, createSignal } from 'solid-js'
+
+const API_KEY = 'import.meta.env.PUBLIC_NEWS_API_KEY' // Replace with your real API key
+const API_URL = `https://newsapi.org/v2/everything?q=finance&apiKey=${import.meta.env.PUBLIC_NEWS_API_KEY}`
+
+const [news, setNews] = createSignal([])
+
+onMount(async () => {
+	try {
+		const response = await fetch(API_URL)
+		const data = await response.json()
+		setNews(data.articles.slice(0, 5)) // Show only 5 latest articles
+	} catch (error) {
+		console.error('Error fetching news:', error)
+	}
+})
+---
+
+<div class='news-section'>
+	<h2 class='text-lg font-medium tracking-wide'>Latest Financial News</h2>
+	<ul class='mt-4 space-y-2'>
+		{
+			news().length > 0 ? (
+				news().map((article, index) => (
+					<li key={index}>
+						<a href={article.url} target='_blank' class='text-blue-500 hover:underline'>
+							{article.title}
+						</a>
+					</li>
+				))
+			) : (
+				<p>Loading financial news...</p>
+			)
+		}
+	</ul>
+</div>
+
+<style>
+	.news-section {
+		margin-top: 20px;
+		padding: 10px;
+		background-color: #f9f9f9;
+		border-radius: 5px;
+	}
+</style>
