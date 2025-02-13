@@ -68,5 +68,20 @@
 		"*.{astro,js,jsx,ts,tsx,md,mdx,json}": [
 			"prettier --write --plugin-search-dir=."
 		]
+	},
+	"pnpm": {
+		"ignoredBuiltDependencies": [
+			"better-sqlite3",
+			"better-sqlite3",
+			"esbuild",
+			"esbuild",
+			"sharp",
+			"sharp"
+		],
+		"onlyBuiltDependencies": [
+			"better-sqlite3",
+			"esbuild",
+			"sharp"
+		]
 	}
 }
