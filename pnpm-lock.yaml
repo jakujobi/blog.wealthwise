@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@astrojs/rss':
-        specifier: 4.0.1
-        version: 4.0.1
+        specifier: 4.0.11
+        version: 4.0.11
       '@astrojs/solid-js':
         specifier: ^5.0.4
         version: 5.0.4(jiti@1.21.7)(solid-js@1.9.4)(yaml@2.7.0)
@@ -156,8 +156,8 @@ packages:
     resolution: {integrity: sha512-GilTHKGCW6HMq7y3BUv9Ac7GMe/MO9gi9GW62GzKtth0SwukCu/qp2wLiGpEujhY+VVhaG9v7kv/5vFzvf4NYw==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0}
 
-  '@astrojs/rss@4.0.1':
-    resolution: {integrity: sha512-fzXWsrAp17atO02OZJETM8e8McRz+dNWzMeO7ENb6xgod2nWj5mH/auPBFs1a9FzMUi1nOQmzSPHO1hxZZpkwQ==}
+  '@astrojs/rss@4.0.11':
+    resolution: {integrity: sha512-3e3H8i6kc97KGnn9iaZBJpIkdoQi8MmR5zH5R+dWsfCM44lLTszOqy1OBfGGxDt56mpQkYVtZJWoxMyWuUZBfw==}
 
   '@astrojs/sitemap@3.0.4':
     resolution: {integrity: sha512-RSqiqs0oD8zTGaClHM0YB8n7e5En+Ihi+6qKthWf47pRkzHpENwlPGvKuEL0kUFXq+GzYot9e2JYH58gtr2q0w==}
@@ -7908,7 +7908,7 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/rss@4.0.1':
+  '@astrojs/rss@4.0.11':
     dependencies:
       fast-xml-parser: 4.5.1
       kleur: 4.1.5
@@ -8647,14 +8647,14 @@ snapshots:
   '@graphql-tools/optimize@2.0.0(graphql@15.8.0)':
     dependencies:
       graphql: 15.8.0
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   '@graphql-tools/relay-operation-optimizer@7.0.14(graphql@15.8.0)':
     dependencies:
       '@ardatan/relay-compiler': 12.0.2(graphql@15.8.0)
       '@graphql-tools/utils': 10.8.1(graphql@15.8.0)
       graphql: 15.8.0
-      tslib: 2.6.3
+      tslib: 2.8.1
     transitivePeerDependencies:
       - encoding
 
@@ -8672,7 +8672,7 @@ snapshots:
       cross-inspect: 1.0.1
       dset: 3.1.4
       graphql: 15.8.0
-      tslib: 2.6.3
+      tslib: 2.8.1
 
   '@graphql-tools/utils@9.2.1(graphql@15.8.0)':
     dependencies:
