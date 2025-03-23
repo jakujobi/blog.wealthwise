@@ -23,14 +23,14 @@ import { SOCIALNETWORKS } from '@/data/links'
 				<HeaderLink href='/tags' class='flex items-center gap-1 text-2xl md:text-base'>
 					<TagIcon /> Tags
 				</HeaderLink>
-				<HeaderLink href='https://wealthwise.com' class='flex items-center gap-1 text-2xl md:text-base'>
+				<HeaderLink href='https://wealthwise-gbc7.onrender.com' class='flex items-center gap-1 text-2xl md:text-base'>
 					Return to WealthWise
 				</HeaderLink>
 			</div>
 
 			<div class='flex justify-center items-center md:justify-end gap-3 md:p-0'>
 				{
-					SOCIALNETWORKS.map((network) => (
+					SOCIALNETWORKS && SOCIALNETWORKS.length > 0 && SOCIALNETWORKS.map((network: any) => (
 						<HeaderLink class='' href={network.url} target='_blank' aria-label={network.name}>
 							<span>{<network.icon />} </span>
 						</HeaderLink>
@@ -40,7 +40,7 @@ import { SOCIALNETWORKS } from '@/data/links'
 		</nav>
 	</div>
 
-	<div class='flex items-center gap-3 md:pl-3' transition:persist='navbar'>
+	<div class='flex items-center gap-3 md:pl-3'>
 		<div>
 			<Search />
 		</div>
