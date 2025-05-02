@@ -7,7 +7,7 @@ let news = []
 try {
 	const response = await fetch(API_URL)
 	const data = await response.json()
-	news = data.articles.slice(0, 5)
+	news = data.articles.slice(0, 40)
 } catch (error) {
 	console.error('Error fetching news:', error)
 }
